@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8YX-ce-x5E">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar First View Controller - First-->
+        <scene sceneID="W3I-pn-N6e">
+            <objects>
+                <viewController title="First" id="CZ4-MO-1fc" customClass="TabBarFirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6MR-3z-ol0"/>
+                        <viewControllerLayoutGuide type="bottom" id="uH9-Qq-sZm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2VE-Yg-loa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="escudoSinBorde.png" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-nY-n1g">
+                                <rect key="frame" x="20" y="12" width="280" height="210"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-aI-tDm">
+                                <rect key="frame" x="20" y="302" width="280" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="197" id="cmh-XK-kIx"/>
+                                </constraints>
+                                <string key="text">El C.D. Leganés FS, es un club de fútbol sala compuesto por un total de 20 equipos, donde se incluyen: El CD Leganés FS Nacional "A" Masculino y CD Leganés FS División Plata Femenino, ambos en categoría nacional de fútbol sala en nuestro país; y el CD Leganés FS Primera Regional Femenino en la máxima categoría a nivel autonómico en la Comunidad de Madrid.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="uH9-Qq-sZm" firstAttribute="top" secondItem="zzU-aI-tDm" secondAttribute="bottom" constant="20" id="1Xb-9z-I6V"/>
+                            <constraint firstAttribute="trailing" secondItem="dcA-nY-n1g" secondAttribute="trailing" constant="20" symbolic="YES" id="TCk-xO-XzD"/>
+                            <constraint firstItem="zzU-aI-tDm" firstAttribute="top" secondItem="dcA-nY-n1g" secondAttribute="bottom" constant="80" id="TOl-jj-kdt"/>
+                            <constraint firstItem="dcA-nY-n1g" firstAttribute="leading" secondItem="zzU-aI-tDm" secondAttribute="leading" id="avh-dC-jBT"/>
+                            <constraint firstItem="zzU-aI-tDm" firstAttribute="trailing" secondItem="dcA-nY-n1g" secondAttribute="trailing" id="g68-Gn-MdL"/>
+                            <constraint firstItem="dcA-nY-n1g" firstAttribute="top" secondItem="2VE-Yg-loa" secondAttribute="top" constant="12" id="mwh-zb-2tF"/>
+                            <constraint firstItem="dcA-nY-n1g" firstAttribute="leading" secondItem="2VE-Yg-loa" secondAttribute="leading" constant="20" symbolic="YES" id="vNf-wr-3WE"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="u1e-5L-l1D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qh2-T1-AhA" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-874"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="phr-Sw-1jF">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="vbC-lb-V7L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="w9J-hz-WNR"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ojW-e2-8Gc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O5X-No-Kvl" kind="relationship" relationship="rootViewController" id="7Ej-4W-7Zj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gML-Fb-53L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="1331"/>
+        </scene>
+        <!--View Controller - Plantilla-->
+        <scene sceneID="1Q4-CS-3mG">
+            <objects>
+                <viewController id="O5X-No-Kvl" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l5n-u6-icY"/>
+                        <viewControllerLayoutGuide type="bottom" id="csE-ft-Rnv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Drv-fE-Br5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="equipo.png" translatesAutoresizingMaskIntoConstraints="NO" id="9XB-RR-kFv">
+                                <rect key="frame" x="0.0" y="98" width="320" height="420"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9XB-RR-kFv" firstAttribute="top" secondItem="l5n-u6-icY" secondAttribute="bottom" constant="4" id="Aox-LX-H71"/>
+                            <constraint firstItem="9XB-RR-kFv" firstAttribute="leading" secondItem="Drv-fE-Br5" secondAttribute="leading" id="KDb-gI-KtF"/>
+                            <constraint firstAttribute="trailing" secondItem="9XB-RR-kFv" secondAttribute="trailing" id="mRz-ew-Zxx"/>
+                            <constraint firstItem="csE-ft-Rnv" firstAttribute="top" secondItem="9XB-RR-kFv" secondAttribute="bottom" constant="1" id="tUY-DY-Hp8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Plantilla" prompt="Cadete B" id="XMl-no-b25">
+                        <barButtonItem key="backBarButtonItem" title="Plantilla" id="ZCx-0u-aNB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Porteros" id="HBQ-nD-CVD">
+                            <connections>
+                                <segue destination="xDC-aG-lRn" kind="push" id="C15-qC-zF9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V98-4w-KKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1135" y="1331"/>
+        </scene>
+        <!--View Controller - Porteros-->
+        <scene sceneID="P6y-ID-KGP">
+            <objects>
+                <viewController id="xDC-aG-lRn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qzL-oo-Rxm"/>
+                        <viewControllerLayoutGuide type="bottom" id="e3u-gA-1gd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sOZ-ho-u6z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 - Sergio Lira Díaz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6Z-04-K5v">
+                                <rect key="frame" x="20" y="117" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 - Sebastián Gonzalo Motta Gambini" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rJJ-l9-E4n">
+                                <rect key="frame" x="20" y="146" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="b6Z-04-K5v" secondAttribute="trailing" constant="20" symbolic="YES" id="3Tw-nf-wtE"/>
+                            <constraint firstItem="b6Z-04-K5v" firstAttribute="top" secondItem="qzL-oo-Rxm" secondAttribute="bottom" constant="23" id="8if-kI-S7B"/>
+                            <constraint firstItem="rJJ-l9-E4n" firstAttribute="top" secondItem="b6Z-04-K5v" secondAttribute="bottom" constant="8" symbolic="YES" id="BMl-Fd-X0C"/>
+                            <constraint firstItem="rJJ-l9-E4n" firstAttribute="trailing" secondItem="b6Z-04-K5v" secondAttribute="trailing" id="SAU-Fq-8h2"/>
+                            <constraint firstItem="b6Z-04-K5v" firstAttribute="leading" secondItem="rJJ-l9-E4n" secondAttribute="leading" id="XiV-H5-tXJ"/>
+                            <constraint firstItem="b6Z-04-K5v" firstAttribute="leading" secondItem="sOZ-ho-u6z" secondAttribute="leading" constant="20" symbolic="YES" id="hza-tm-eeD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Porteros" prompt="Cadete B" id="szE-SY-6Np">
+                        <barButtonItem key="rightBarButtonItem" title="Cierres" id="pr0-8U-sVy">
+                            <connections>
+                                <segue destination="0Tj-gp-ktX" kind="push" id="y86-C9-hIr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bbR-cw-7z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1596" y="1331"/>
+        </scene>
+        <!--View Controller - Cierres-->
+        <scene sceneID="hgw-WC-WYE">
+            <objects>
+                <viewController id="0Tj-gp-ktX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WFY-U2-wU1"/>
+                        <viewControllerLayoutGuide type="bottom" id="bMM-6K-ZwO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E7k-1b-xik">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 - Diego Gallego del Pozo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lr7-jL-C3g">
+                                <rect key="frame" x="20" y="140" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 - Javier Aguilera Hernando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLY-LN-UmE">
+                                <rect key="frame" x="20" y="111" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZLY-LN-UmE" firstAttribute="trailing" secondItem="lr7-jL-C3g" secondAttribute="trailing" id="4eS-iA-Alk"/>
+                            <constraint firstItem="ZLY-LN-UmE" firstAttribute="leading" secondItem="E7k-1b-xik" secondAttribute="leading" constant="20" symbolic="YES" id="Q5k-U9-O9a"/>
+                            <constraint firstAttribute="trailing" secondItem="ZLY-LN-UmE" secondAttribute="trailing" constant="20" symbolic="YES" id="T7x-I4-GqP"/>
+                            <constraint firstItem="lr7-jL-C3g" firstAttribute="leading" secondItem="ZLY-LN-UmE" secondAttribute="leading" id="dtJ-GB-Onx"/>
+                            <constraint firstItem="ZLY-LN-UmE" firstAttribute="top" secondItem="WFY-U2-wU1" secondAttribute="bottom" constant="17" id="fsO-hX-mVX"/>
+                            <constraint firstItem="lr7-jL-C3g" firstAttribute="top" secondItem="ZLY-LN-UmE" secondAttribute="bottom" constant="8" symbolic="YES" id="hAj-UB-0Le"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cierres" prompt="Cadete B" id="Y75-sg-wPJ">
+                        <barButtonItem key="rightBarButtonItem" title="Alas" id="SbA-Vh-bD8">
+                            <connections>
+                                <segue destination="ck8-ji-ftk" kind="push" id="qQy-TE-MM3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2mS-PA-Oyy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2011" y="1331"/>
+        </scene>
+        <!--View Controller - Alas-->
+        <scene sceneID="WCD-0E-2fa">
+            <objects>
+                <viewController id="ck8-ji-ftk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rn7-8U-bJn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fv3-xV-lN3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="elq-Np-ga7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9 - Gonzalo Rubio Sánchez " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvh-tI-Bgv">
+                                <rect key="frame" x="20" y="109" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 - Álvaro Pascual Hellmann" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUk-f3-6Oc">
+                                <rect key="frame" x="20" y="138" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11 - Raúl Romero Sánchez" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAo-XZ-FFE">
+                                <rect key="frame" x="20" y="167" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nvh-tI-Bgv" firstAttribute="trailing" secondItem="gUk-f3-6Oc" secondAttribute="trailing" id="3qd-Gy-P1y"/>
+                            <constraint firstItem="nvh-tI-Bgv" firstAttribute="top" secondItem="Rn7-8U-bJn" secondAttribute="bottom" constant="15" id="5Nn-jF-Ad9"/>
+                            <constraint firstItem="nvh-tI-Bgv" firstAttribute="leading" secondItem="elq-Np-ga7" secondAttribute="leading" constant="20" symbolic="YES" id="6Go-XQ-RAc"/>
+                            <constraint firstItem="QAo-XZ-FFE" firstAttribute="top" secondItem="gUk-f3-6Oc" secondAttribute="bottom" constant="8" symbolic="YES" id="Hdn-5x-RoQ"/>
+                            <constraint firstItem="nvh-tI-Bgv" firstAttribute="leading" secondItem="gUk-f3-6Oc" secondAttribute="leading" id="LyP-Yg-mr8"/>
+                            <constraint firstItem="gUk-f3-6Oc" firstAttribute="trailing" secondItem="QAo-XZ-FFE" secondAttribute="trailing" id="XiS-RH-3ZI"/>
+                            <constraint firstItem="QAo-XZ-FFE" firstAttribute="leading" secondItem="gUk-f3-6Oc" secondAttribute="leading" id="mpY-K3-2CI"/>
+                            <constraint firstAttribute="trailing" secondItem="nvh-tI-Bgv" secondAttribute="trailing" constant="20" symbolic="YES" id="xfY-qH-w5Z"/>
+                            <constraint firstItem="gUk-f3-6Oc" firstAttribute="top" secondItem="nvh-tI-Bgv" secondAttribute="bottom" constant="8" symbolic="YES" id="yTv-07-lcb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Alas" prompt="Cadete B" id="dM7-9z-QxR">
+                        <barButtonItem key="rightBarButtonItem" title="Pivots" id="ocC-Hh-mwv">
+                            <connections>
+                                <segue destination="vUm-tg-qbx" kind="push" id="fwE-le-MRL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ML-mH-moT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2501" y="1331"/>
+        </scene>
+        <!--View Controller - Pivots-->
+        <scene sceneID="UAG-Sy-RGX">
+            <objects>
+                <viewController id="vUm-tg-qbx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q9D-KD-EW4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ic5-MD-XBY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mlB-Pi-Kqh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 - Naji Kamel Ballesteros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mi-gf-h7Y">
+                                <rect key="frame" x="20" y="108" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 - Alejandro García" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nnf-zd-ALp">
+                                <rect key="frame" x="20" y="137" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nnf-zd-ALp" firstAttribute="trailing" secondItem="7Mi-gf-h7Y" secondAttribute="trailing" id="B6H-Vf-Ouj"/>
+                            <constraint firstItem="7Mi-gf-h7Y" firstAttribute="top" secondItem="q9D-KD-EW4" secondAttribute="bottom" constant="14" id="Fyy-1I-ux3"/>
+                            <constraint firstAttribute="trailing" secondItem="7Mi-gf-h7Y" secondAttribute="trailing" constant="20" symbolic="YES" id="ORv-YM-wqd"/>
+                            <constraint firstItem="nnf-zd-ALp" firstAttribute="top" secondItem="7Mi-gf-h7Y" secondAttribute="bottom" constant="8" symbolic="YES" id="USI-af-NSp"/>
+                            <constraint firstItem="7Mi-gf-h7Y" firstAttribute="leading" secondItem="mlB-Pi-Kqh" secondAttribute="leading" constant="20" symbolic="YES" id="mCc-kY-Igu"/>
+                            <constraint firstItem="nnf-zd-ALp" firstAttribute="leading" secondItem="7Mi-gf-h7Y" secondAttribute="leading" id="zAn-RM-tJX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pivots" prompt="Cadete B" id="0s0-kr-hVW">
+                        <barButtonItem key="rightBarButtonItem" title="Cuerpo técnico" id="s4t-Cu-uux">
+                            <connections>
+                                <segue destination="Oh7-5H-Gmq" kind="push" id="xPY-2n-7k4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7VC-a2-Qfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2963" y="1331"/>
+        </scene>
+        <!--View Controller - Cuerpo técnico-->
+        <scene sceneID="996-D0-7p4">
+            <objects>
+                <viewController id="Oh7-5H-Gmq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z7n-1c-TTa"/>
+                        <viewControllerLayoutGuide type="bottom" id="mEg-o9-miF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qQb-UP-yrr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTRENADOR: Manuel Toro Legaz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNa-ba-xzr">
+                                <rect key="frame" x="20" y="108" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DELEGADA :  Sara Kamel Ballesteros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="62j-sO-bqh">
+                                <rect key="frame" x="20" y="137" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="62j-sO-bqh" firstAttribute="leading" secondItem="WNa-ba-xzr" secondAttribute="leading" id="2Ga-fF-vg1"/>
+                            <constraint firstItem="WNa-ba-xzr" firstAttribute="top" secondItem="z7n-1c-TTa" secondAttribute="bottom" constant="14" id="FCL-ot-Q8S"/>
+                            <constraint firstItem="WNa-ba-xzr" firstAttribute="trailing" secondItem="62j-sO-bqh" secondAttribute="trailing" id="aGB-Zf-FPD"/>
+                            <constraint firstAttribute="trailing" secondItem="WNa-ba-xzr" secondAttribute="trailing" constant="20" symbolic="YES" id="fXJ-dm-yh2"/>
+                            <constraint firstItem="62j-sO-bqh" firstAttribute="top" secondItem="WNa-ba-xzr" secondAttribute="bottom" constant="8" symbolic="YES" id="puc-ay-crA"/>
+                            <constraint firstItem="WNa-ba-xzr" firstAttribute="leading" secondItem="qQb-UP-yrr" secondAttribute="leading" constant="20" symbolic="YES" id="sAN-TV-gHx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cuerpo técnico" prompt="Cadete B" id="B1s-ik-fgd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUG-7h-ITC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3389" y="1331"/>
+        </scene>
+        <!--Tab Bar Second View Controller - Second-->
+        <scene sceneID="ot8-2e-RuS">
+            <objects>
+                <viewController title="Second" id="QUy-BD-bpt" customClass="TabBarSecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bbF-tg-uk8"/>
+                        <viewControllerLayoutGuide type="bottom" id="OaV-KU-Zo8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMD-aP-Fq6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Palmares" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="29h-N2-YGT">
+                                <rect key="frame" x="20" y="20" width="280" height="42"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" delaysContentTouches="NO" canCancelContentTouches="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" bouncesZoom="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DcM-Fx-MKR">
+                                <rect key="frame" x="10" y="70" width="297" height="439"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">DIVISIÓN NACIONAL B MASCULINA
+
+Campeones de Liga 2009/2010
+Ascenso a Categoría Primera Nacional A
+                                                                 LIGA DE PRIMERA REGIONAL  DE MADRID:
+
+Campeonas de Liga 2008/2009
+Ascenso a División de Plata
+                                                                  LIGA DE SEGUNDA REGIONAL DE MADRID:
+
+Subcampeonato de Liga 2009/2010
+Ascenso a Primera Regional
+                                                            ESCUELA CD LEGANÉS FS
+
+Premio al deporte base de XV Gala del Deporte Exmo. Ayuntamiento de Leganés 2006.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" size="system"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="29h-N2-YGT" firstAttribute="top" secondItem="gMD-aP-Fq6" secondAttribute="top" constant="20" symbolic="YES" id="5Li-vO-0Ai"/>
+                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="top" secondItem="29h-N2-YGT" secondAttribute="bottom" constant="8" symbolic="YES" id="7m5-PO-3S5"/>
+                            <constraint firstAttribute="trailing" secondItem="DcM-Fx-MKR" secondAttribute="trailing" constant="13" id="IJo-Ma-v7r"/>
+                            <constraint firstItem="OaV-KU-Zo8" firstAttribute="top" secondItem="DcM-Fx-MKR" secondAttribute="bottom" constant="10" id="U4o-iQ-IoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="29h-N2-YGT" secondAttribute="trailing" constant="20" symbolic="YES" id="cwJ-Eb-AQY"/>
+                            <constraint firstItem="DcM-Fx-MKR" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="10" id="dVk-Wi-fRa"/>
+                            <constraint firstItem="29h-N2-YGT" firstAttribute="leading" secondItem="gMD-aP-Fq6" secondAttribute="leading" constant="20" symbolic="YES" id="mKi-MP-mDR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="Z7h-1E-pvt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qq-4t-Ow8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="-150"/>
+        </scene>
+        <!--Tab Bar Third View Controller - Third-->
+        <scene sceneID="67K-DK-OSH">
+            <objects>
+                <viewController id="OmX-0h-Mo2" customClass="TabBarThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aja-cp-CbH"/>
+                        <viewControllerLayoutGuide type="bottom" id="tev-5c-c56"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3qG-Lz-Nku">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ciudad deportiva La Fortuna" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50f-fU-5f4">
+                                <rect key="frame" x="20" y="20" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="URg-oP-jtt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laFortuna.png" translatesAutoresizingMaskIntoConstraints="NO" id="9em-bq-0QM">
+                                <rect key="frame" x="40" y="58" width="240" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="Waw-KA-Vx3"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlH-8l-xkV">
+                                <rect key="frame" x="40" y="248" width="240" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">Dirección:
+
+C Castello Branco, 2  28917  LEGANÉS (MADRID)
+                                                                                                    Accesos:
+
+Bus: L1, 483, 486, 487
+Metro más cercano: La Fortuna (L-11)</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="50f-fU-5f4" secondAttribute="trailing" constant="20" symbolic="YES" id="1vC-rW-4cc"/>
+                            <constraint firstItem="tev-5c-c56" firstAttribute="top" secondItem="UlH-8l-xkV" secondAttribute="bottom" constant="44" id="Abb-Rb-OgE"/>
+                            <constraint firstItem="50f-fU-5f4" firstAttribute="top" secondItem="3qG-Lz-Nku" secondAttribute="top" constant="20" symbolic="YES" id="KEq-JN-z8Z"/>
+                            <constraint firstItem="9em-bq-0QM" firstAttribute="top" secondItem="50f-fU-5f4" secondAttribute="bottom" constant="8" symbolic="YES" id="MVj-Gq-79E"/>
+                            <constraint firstItem="UlH-8l-xkV" firstAttribute="top" secondItem="9em-bq-0QM" secondAttribute="bottom" constant="13" id="Nar-mo-ux9"/>
+                            <constraint firstItem="9em-bq-0QM" firstAttribute="leading" secondItem="UlH-8l-xkV" secondAttribute="leading" id="b73-ct-G05"/>
+                            <constraint firstItem="UlH-8l-xkV" firstAttribute="trailing" secondItem="9em-bq-0QM" secondAttribute="trailing" id="fK4-4V-7p9"/>
+                            <constraint firstAttribute="trailing" secondItem="UlH-8l-xkV" secondAttribute="trailing" constant="40" id="pip-1p-8iB"/>
+                            <constraint firstItem="9em-bq-0QM" firstAttribute="leading" secondItem="3qG-Lz-Nku" secondAttribute="leading" constant="40" id="rSP-0p-RyP"/>
+                            <constraint firstItem="50f-fU-5f4" firstAttribute="centerX" secondItem="9em-bq-0QM" secondAttribute="centerX" id="uxV-Og-cUi"/>
+                            <constraint firstItem="50f-fU-5f4" firstAttribute="leading" secondItem="3qG-Lz-Nku" secondAttribute="leading" constant="20" symbolic="YES" id="wz4-0v-op7"/>
+                            <constraint firstItem="UlH-8l-xkV" firstAttribute="leading" secondItem="3qG-Lz-Nku" secondAttribute="leading" constant="40" id="zfH-vC-9zY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Third" image="first" id="Tqv-m0-D5g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZt-ro-Ufh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685" y="605"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Vex-rW-GRa">
+            <objects>
+                <tabBarController id="8YX-ce-x5E" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="JQR-rB-NYL">
+                        <rect key="frame" x="0.0" y="431" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
+                        <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="OmX-0h-Mo2" kind="relationship" relationship="viewControllers" id="KK4-RG-uc5"/>
+                        <segue destination="vbC-lb-V7L" kind="relationship" relationship="viewControllers" id="b9R-bS-9gU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="180"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="equipo.png" width="1000" height="750"/>
+        <image name="escudoSinBorde.png" width="197" height="258"/>
+        <image name="first" width="30" height="30"/>
+        <image name="laFortuna.png" width="251" height="189"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
