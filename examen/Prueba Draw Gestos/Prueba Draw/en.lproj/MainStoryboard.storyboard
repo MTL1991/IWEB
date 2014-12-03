@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--Prueba Draw View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PruebaDrawViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNp-XX-cbX" customClass="PruebaDrawView">
+                                <rect key="frame" x="0.0" y="99" width="320" height="635"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ebs-S4-oTj" appends="YES" id="HkJ-rP-kiQ"/>
+                                </connections>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="100" minValue="0.0" maxValue="400" translatesAutoresizingMaskIntoConstraints="NO" id="Ue3-rD-YdC">
+                                <rect key="frame" x="101" y="20" width="118" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="114" id="4oh-yo-fSx"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="cambiaAltura:" destination="2" eventType="valueChanged" id="yfp-z1-jaM"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wNp-XX-cbX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="99" id="0je-5I-Vkn"/>
+                            <constraint firstItem="Ue3-rD-YdC" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="9wa-9B-1x5"/>
+                            <constraint firstItem="Ue3-rD-YdC" firstAttribute="centerX" secondItem="wNp-XX-cbX" secondAttribute="centerX" type="default" id="XGy-LA-SVj"/>
+                            <constraint firstItem="wNp-XX-cbX" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="bGH-7l-1hM"/>
+                            <constraint firstItem="wNp-XX-cbX" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="q7e-mL-4BJ"/>
+                            <constraint firstAttribute="bottom" secondItem="wNp-XX-cbX" secondAttribute="bottom" constant="-186" id="tUn-13-G9J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="View" destination="wNp-XX-cbX" id="lTf-1N-UX8"/>
+                        <outlet property="panRadio" destination="ebs-S4-oTj" id="Up8-il-L8c"/>
+                        <outlet property="sliderAltura" destination="Ue3-rD-YdC" id="Lkw-VA-cI6"/>
+                        <outlet property="viewCirculo" destination="wNp-XX-cbX" id="Cjl-Ba-vKx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ebs-S4-oTj">
+                    <connections>
+                        <action selector="panRCambia:" destination="2" id="4aK-Qd-Dtp"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
